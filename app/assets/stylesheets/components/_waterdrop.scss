@@ -1,6 +1,6 @@
 // Animation properties
 $anim-width:    200px;
-$anim-height:   250px;
+$anim-height:   450px;
 $anim-duration: 4s;
 
 // Splash properties
@@ -27,7 +27,8 @@ $c-splash:      #FFF;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  position: relative;
+  position: absolute;
+  z-index: 5;
 
   &:before {
     position: absolute;

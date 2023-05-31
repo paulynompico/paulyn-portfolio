@@ -8,6 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -17,11 +18,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap" rel="stylesheet">
   </head>
 
-  <body data-controller="hello">
+  <body data-controller="hello" style="background-color: rgb(86,168,190);">
     <div id="navbar">
-      <h1 class="animate__animated animate__fadeInUp">ᜉ᜔ᜎᜒᜈ᜔ ᜋ᜔ᜉᜒᜃ᜔</h1>
-      <%= image_tag "avatar.jpg", alt: "avatar", class: "avatar animate__animated animate__fadeInUp" %>
+      <h1 class="animate__animated animate__fadeInUp">ᜉ᜔ᜎᜒᜈ᜔</h1>
+      <a class="nav-link" href="#">Projects</a>
+      <a class="nav-link" href="#">Tech Stack</a>
     </div>
     <%= yield %>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
