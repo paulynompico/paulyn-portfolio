@@ -7,4 +7,7 @@ export default class extends Controller {
   change(event) {
     event.currentTarget.innerText = "Paulyn Ompico"
   }
+  return(event) {
+    event.currentTarget.innerText = "Potato"
+  }
 }

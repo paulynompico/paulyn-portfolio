@@ -19,7 +19,8 @@
 
   <body data-controller="hello">
     <div id="navbar">
-      <h1 class="animate__animated animate__fadeInUp" data-action="click->hello#change">ᜉ᜔ᜎᜒᜈ᜔ ᜋ᜔ᜉᜒᜃ᜔</h1>
+      <h1 class="animate__animated animate__fadeInUp">ᜉ᜔ᜎᜒᜈ᜔ ᜋ᜔ᜉᜒᜃ᜔</h1>
+      <%= image_tag "avatar.jpg", alt: "avatar", class: "avatar animate__animated animate__fadeInUp" %>
     </div>
     <%= yield %>
   </body>
