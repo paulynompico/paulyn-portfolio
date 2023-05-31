@@ -4,7 +4,7 @@
   --v2: #1c7aa3;
   --v3: #1c7aa3;
   --transparentv3: #5e30d900;
-  --v4: #3b1895;
+  --v4: #189595;
   --s1: #cffaec;
   --s2: #a5e8fb;
   --cloud: #fea798;
@@ -23,14 +23,65 @@
 }
 
 
-
 .landscape {
   height: 80vh;
   width: 100vw;
-  // background-image: linear-gradient(var(--v1), var(--s1), #be91c600);
+  background-image: linear-gradient(var(--v1), var(--s1), #be91c600);
   position: absolute;
   z-index: 1;
   overflow: hidden;
+}
+
+.mountain {
+  border-radius: 180% 80% 0% 0%/60vmin 60vmin 0% 0%;
+  width: 40vmin;
+  height: 30vmin;
+  bottom: 50%;
+  left: -10vmin;
+  background: var(--s1);
+  background-image: linear-gradient(var(--v1), var(--v4) 30%, var(--v3));
+  box-shadow: inset -10px 0 10px -10px var(--s1);
+  &:before {
+    content: "";
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: inherit;
+    transform-origin: bottom center;
+    transform: scaleX(1) scaleY(-0.6);
+    filter: blur(10px);
+  }
+}
+
+.mountain-2 {
+  left: 15vmin;
+  height: 15vmin;
+  width: 40vmin;
+  box-shadow: inset -15px 0 10px -14px var(--s1);
+  border-radius: 120% 50% 0% 0%/25vmin 25vmin 0% 0%;
+  background-image: linear-gradient(var(--v3), var(--v4));
+}
+
+.mountain-3 {
+  border-radius: 80% 0% 0 0/100% 100% 0 0;
+  right: -50vmin;
+  width: 100vmin;
+  left: auto;
+  height: 20vmin;
+  color: var(--v3);
+  background-image: linear-gradient(var(--v3), var(--v4));
+  box-shadow: inset 15px 0 10px -10px var(--s1);
+}
+
+.mountain-3:after {
+  content: "";
+  border-radius: 60% 0 0 0/100% 0 0 0;
+  background: inherit;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  right: 20%;
 }
 
 .splash {
