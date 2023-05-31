@@ -9,3 +9,6 @@ application.register("gsap", GsapController)
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import NameController from "./name_controller"
+application.register("name", NameController)

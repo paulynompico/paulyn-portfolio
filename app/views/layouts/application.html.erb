@@ -8,9 +8,19 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tagalog&display=swap" rel="stylesheet">
   </head>
 
   <body data-controller="hello">
+    <div id="navbar">
+      <h1 class="animate__animated animate__fadeInUp" data-action="click->hello#change">ᜉ᜔ᜎᜒᜈ᜔ ᜋ᜔ᜉᜒᜃ᜔</h1>
+    </div>
     <%= yield %>
   </body>
 </html>
