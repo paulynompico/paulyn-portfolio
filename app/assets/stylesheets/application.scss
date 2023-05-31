@@ -26,6 +26,7 @@ html{
   align-items: center;
   width: 100vw;
   height: 1800px;
+  padding-top: 50vh;
 }
 
 #bg {
@@ -40,9 +41,8 @@ svg{
 }
 
 .card{
-  top: 90px;
+  top: 100px;
   width: 70%;
-  height: 85%;
   border-radius: 10px;
   z-index: 6;
   position: absolute;
@@ -56,6 +56,7 @@ svg{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 20px;
 }
 
 .proj{
@@ -73,7 +74,7 @@ svg{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .avatar{
@@ -81,4 +82,12 @@ svg{
   height: 100px;
   border-radius: 50%;
   box-shadow: 0 2px 3px rgba($color: #00000074, $alpha: 0.4);
+}
+
+p{
+  margin: 0 20px;
+}
+
+.headline{
+  color: aliceblue;
 }
