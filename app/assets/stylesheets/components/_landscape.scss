@@ -4,7 +4,8 @@
   --v2: #1c7aa3;
   --v3: #1c7aa3;
   --transparentv3: #5e30d900;
-  --v4: #189595;
+  // --v4: #189595;
+  --v4: #005377;
   --s1: #cffaec;
   --s2: #a5e8fb;
   --cloud: #fea798;
@@ -24,7 +25,7 @@
 
 
 .landscape {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-image: linear-gradient(var(--v1), var(--s1), #be91c600);
   position: absolute;

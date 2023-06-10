@@ -2,12 +2,14 @@
 @import "components/navbar";
 @import "components/landscape";
 
-body,
-html{
+@import "font-awesome";
+
+body{
   margin: 0;
   padding: 0;
-  overflow: y-scroll;
   height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .container{
@@ -15,7 +17,22 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
   width: 100vw;
+}
+
+#arrow{
+ z-index: 6;
+ bottom: 0%;
+ position: absolute;
+ padding-bottom: 10px;
+}
+
+i{
+  color: rgba(255, 255, 255, 0.449);
+  font-size: 80px;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .p-container{
@@ -30,23 +47,19 @@ html{
 }
 
 #bg {
-  z-index: -1;
+  z-index: -5;
   position: absolute;
   top: 0;
   width: 100vw;
-}
-
-svg{
-  width: 100vw;
+  top: -40vmin;
 }
 
 .card{
-  top: 100px;
+  top: 160px;
   width: 60vw;
   min-height: 50vh;
   border-radius: 10px;
   z-index: 6;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,8 +105,4 @@ p{
 
 .headline{
   color: aliceblue;
-}
-
-#bg{
-  top: -80vmin;
 }
