@@ -1,20 +1,24 @@
 
 :root {
-  --v1: #1c7aa3;
-  --v2: #1c7aa3;
-  --v3: #1c7aa3;
-  --transparentv3: #5e30d900;
-  // --v4: #189595;
-  --v4: #005377;
-  --s1: #cffaec;
-  --s2: #a5e8fb;
-  --cloud: #fea798;
+  //light palette
+  // --v1: #1c7aa3;
+  // --v2: #1c7aa3;
+  // --v3: #1c7aa3;
+  // --transparentv3: #5e30d900;
+  // --v4: #005377;
+  // --s1: #cffaec;
+  // --s2: #a5e8fb;
+
+  // dark palette
+  --v1: #415a77;
+  --v2: #415a77;
+  --v3: #415a77;
+  --transparentv3: #0d1b2a;
+  --v4: #1b263b;
+  --s1: #e0e1dd;
+  --s2: #778da9;
 }
-*,
-*:before,
-*:after {
-  //animation:none!important;
-}
+
 .landscape:after,
 .landscape:before,
 .landscape *,
