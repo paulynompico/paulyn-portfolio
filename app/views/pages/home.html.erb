@@ -2,7 +2,7 @@
 <div class="drip"></div>
 <div class="container">
   <div class="card animate__animated animate__fadeInUp">
-    <%= image_tag "avatar.jpg", alt: "avatar", class: "avatar" %>
+    <%# <%= image_tag "avatar.jpg", alt: "avatar", class: "avatar" %>
     <h2>Paulyn Ompico</h1>
     <h5>Web Developer</h5>
     <p>I first got into coding back in high school and I absolutely loved it. But at the time, I only considered it a hobby. After a 12-year hiatus, I had this realization that coding was what I really wanted to do. So, I took a break from academia and decided to explore the tech world.</p>
@@ -18,12 +18,31 @@
 
 <div class="p-container" id="projects">
   <h2 data-aos="zoom-in" class="headline">PROJECTS</h2>
-  <div class="proj" data-aos="zoom-in"></div>
-  <div class="proj" data-aos="zoom-in"></div>
-  <div class="proj" data-aos="zoom-in"></div>
-  <div class="proj" data-aos="zoom-in"></div>
-  <div class="proj" data-aos="zoom-in"></div>
-  <div class="proj" data-aos="zoom-in"></div>
+  <%= link_to "https://paulynswatchlist.herokuapp.com", target: :_blank do %>
+    <div class="proj" data-aos="zoom-in">
+      <%= image_tag "watchlist.png", alt: "project image", class: "photo" %>
+    </div>
+  <% end %>
+  <%= link_to "https://memomio.herokuapp.com", target: :_blank do %>
+    <div class="proj" data-aos="zoom-in">
+      <%= image_tag "memomio.png", alt: "project image", class: "photo" %>
+    </div>
+  <% end %>
+  <%= link_to "https://newbnb.herokuapp.com", target: :_blank do %>
+    <div class="proj" data-aos="zoom-in">
+      <%= image_tag "newbnb.png", alt: "project image", class: "photo" %>
+    </div>
+  <% end %>
+  <%= link_to "https://swynfel.itch.io/faithless-land", target: :_blank do %>
+    <div class="proj" data-aos="zoom-in">
+      <%= image_tag "faithless.jpg", alt: "project image", class: "photo" %>
+    </div>
+  <% end %>
+  <%= link_to "https://swynfel.itch.io/shelterless", target: :_blank do %>
+    <div class="proj" data-aos="zoom-in">
+      <%= image_tag "shelterless.png", alt: "project image", class: "photo" %>
+    </div>
+  <% end %>
 </div>
 
 <%= render "bg" %>
